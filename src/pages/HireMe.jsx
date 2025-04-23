@@ -19,32 +19,44 @@ const HireMe = () => {
       style={{
         minHeight: "100vh",
         flexDirection: "column",
-        gap: "1rem",
+        gap: "2rem",
+        backgroundColor: "#f8f9fa", // হালকা ব্যাকগ্রাউন্ড
+        padding: "2rem",
       }}
     >
+      <h2 className="fw-bold mb-4 text-primary">📬 Let's Work Together!</h2>
+
+      <p className="text-muted mb-4" style={{ maxWidth: "600px" }}>
+        If you're looking for a passionate and skilled frontend developer who
+        can bring life to your product UI and user experience — I'm just one
+        click away!
+      </p>
+
+      {/* Download CV */}
       <button
         type="button"
-        className="btn btn-primary d-flex align-items-center gap-2 mb-5"
+        className="btn btn-outline-primary d-flex align-items-center gap-2 px-4 py-2"
         onClick={handleRandomCVDownload}
+        style={{ borderRadius: "8px", fontWeight: "500" }}
       >
-        <Download
-          size={22}
-          className="transition-transform group-hover:rotate-12"
-        />
-        Curriculum Vitae
+        <Download size={22} className="transition-transform" />
+        Download My CV
       </button>
 
-      {/* Email Contact Button */}
+      {/* Email Contact */}
       <a
         href="https://mail.google.com/mail/?view=cm&fs=1&to=shaharir.cse@gmail.com&su=Subject%20Here&body=Write%20your%20message%20here"
         target="_blank"
-        className="d-flex align-items-center gap-2 text-decoration-none text-dark bg-info py-2 px-2"
+        rel="noopener noreferrer"
+        className="d-flex align-items-center gap-2 text-decoration-none text-white bg-success py-2 px-4 mt-3"
+        style={{
+          borderRadius: "8px",
+          fontWeight: "500",
+          transition: "background-color 0.3s ease",
+        }}
       >
-        <Mail
-          size={22}
-          className="transition-transform group-hover:-rotate-12"
-        />
-        <span className="font-semibold text-lg">Contact With Email</span>
+        <Mail size={22} className="transition-transform" />
+        <span className="fs-5">Contact Me via Email</span>
       </a>
     </div>
   );

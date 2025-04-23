@@ -3,6 +3,7 @@ import {
   SiExpress,
   SiJavascript,
   SiMongodb,
+  SiNestjs,
   SiPython,
   SiTypescript,
 } from "react-icons/si";
@@ -43,6 +44,9 @@ const Skills = () => {
             </li>
             <li class="list-inline-item" title="Express">
               <SiExpress />
+            </li>
+            <li class="list-inline-item" title="Nest.js">
+              <SiNestjs />
             </li>
             <li class="list-inline-item" title="MongoDB">
               <SiMongodb />
